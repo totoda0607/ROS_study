@@ -38,7 +38,13 @@
   메모리 할당 = diskmgmt.msc로 접속 (디스크 관리) * 윈도우 + r 키로 실행
   분할 해야할 곳에서 볼륨축소를 실행 (1기가 = 1024)로 20기가이상 할당
   rufus에 부팅 옆에 선택을 눌러서 ios 연결후 시작
+  위에 과정이 끝나면 BIOS에서 부팅순서를 usb를 1순위로
   
+  cmd에서 diskpart이후, list disk를 활용하여 disk의 *표시의 유무확인
+  *가 있스면 gpt의 형식으로 usb를 생성, 아닌경우 일반 형태로 생성
+  
+  ubuntu에서 installation type에서 5번째 공정 Someting else 선택
+  Free space의 빈공간에 파티션은 상관없이 Ext4와 마운트는 '/'
 
 
 
